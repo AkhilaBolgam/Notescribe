@@ -1,8 +1,6 @@
 package class_diagram;
 
 import java.util.Vector;
-import class_diagram.Feedback;
-import class_diagram.SharedLink;
 
 public class User {
 	private int _userId;
