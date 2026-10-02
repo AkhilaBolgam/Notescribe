@@ -1,5 +1,7 @@
 package class_diagram;
 
+import java.util.Date;
+
 public class Feedback {
 	private int _feedbackId;
 	private int _rating;

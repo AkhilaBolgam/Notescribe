@@ -1,5 +1,7 @@
 package class_diagram;
 
+import java.util.Date;
+
 public class SharedLink {
 	private int _shareId;
 	private String _recipientEmail;
