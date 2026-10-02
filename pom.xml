@@ -29,9 +29,9 @@
   </dependencies>
 
   <build>
-    <!-- The class files live in the repo root; tests live in the test/ folder. -->
+    <!-- All files live in the repo root. Files ending in Test.java are tests. -->
     <sourceDirectory>.</sourceDirectory>
-    <testSourceDirectory>test</testSourceDirectory>
+    <testSourceDirectory>.</testSourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -39,9 +39,12 @@
         <version>3.13.0</version>
         <configuration>
           <excludes>
-            <exclude>test/**</exclude>
+            <exclude>**/*Test.java</exclude>
             <exclude>target/**</exclude>
           </excludes>
+          <testIncludes>
+            <testInclude>**/*Test.java</testInclude>
+          </testIncludes>
         </configuration>
       </plugin>
       <plugin>
